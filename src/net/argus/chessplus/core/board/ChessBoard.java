@@ -121,8 +121,9 @@ public class ChessBoard {
 				if(mp == null)
 					continue;
 
-				if(mp.size() > 0)
+				if(mp.size() > 0) {
 					is[teamRegister.getTeams().indexOf(p.getTeam())] += 1;
+				}
 				
 			}
 			

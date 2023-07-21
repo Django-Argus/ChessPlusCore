@@ -41,6 +41,7 @@ public class BasicChessBoard extends ChessBoardDefault {
 		cb.pop(new Pawn(cb), "h2", Team.WHITE);
 		
 		
+		cb.pop(new King(cb), "e8", Team.BLACK);
 		cb.pop(new Rook(cb), "a8", Team.BLACK);
 		cb.pop(new Knight(cb), "b8", Team.BLACK);
 		cb.pop(new Bishop(cb), "c8", Team.BLACK);
@@ -57,7 +58,7 @@ public class BasicChessBoard extends ChessBoardDefault {
 		cb.pop(new Pawn(cb), "e7", Team.BLACK);
 		cb.pop(new Pawn(cb), "f7", Team.BLACK);
 		cb.pop(new Pawn(cb), "g7", Team.BLACK);
-		cb.pop(new Pawn(cb), "h7", Team.BLACK);
+		cb.pop(new Pawn(cb), "g7", Team.BLACK);
 		
 		
 	}

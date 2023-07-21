@@ -70,16 +70,11 @@ public abstract class ChessPiece {
 					|| mp.getLocation().getY() >= board.getHeight() || mp.getLocation().getY() < 0)
 				continue;
 			
-			if(sources.size() == 1 && board.getPiece(mp.getLocation()) != null && board.getPiece(mp.getLocation()).equals(sources.get(0))) {
+			setLocation(mp.getLocation());
+			if(!King.isCheck(k.getLocation(), getTeam(), getBoard()))
 				temp.add(mp);
-					
-			}else {
-				setLocation(mp.getLocation());
-				if(!King.isCheck(k.getLocation(), getTeam(), getBoard()))
-					temp.add(mp);
-			}
+		
 		}
-
 		setLocation(loc);
 		return temp;
 	}
